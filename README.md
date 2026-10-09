@@ -1,135 +1,168 @@
+# Flutter and Dart Lab Experiments 🚀
 
-# Flutter and Dart Lab Experiments
-
-A collection of practical experiments completed while learning Flutter application development and the Dart programming language. This repository contains hands-on exercises covering Dart fundamentals, Flutter widgets, UI design, navigation, state management, APIs, and more.
+A collection of 12 practical experiments covering Dart programming and Flutter application development. This repository includes hands-on exercises on programming fundamentals, UI design, responsive layouts, navigation, state management, API integration, local storage, animations, and a mini project.
 
 ## 📚 Experiments
 
-The following experiments are included in this repository:
+| No. | Experiment | File Name | Concepts Covered |
+|---|---|---|---|
+| 01 | Dart Language Basics | `experiment_01_dart_basics.dart` | Variables, data types, operators, functions, and control flow |
+| 02 | Flutter Widgets and Layouts | `experiment_02_flutter_widgets.dart` | Text, Image, Container, Row, Column, and Stack |
+| 03 | Responsive UI Design | `experiment_03_responsive_ui.dart` | MediaQuery, breakpoints, and adaptive layouts |
+| 04 | Navigation and Named Routes | `experiment_04_navigation.dart` | Navigator, screen transitions, and named routes |
+| 05 | State Management | `experiment_05_state_management.dart` | StatefulWidget, StatelessWidget, setState, and Provider |
+| 06 | Custom Widgets and Styling | `experiment_06_custom_widgets.dart` | Reusable widgets, themes, colors, and decorations |
+| 07 | Forms and Validation | `experiment_07_forms.dart` | TextFormField, controllers, and input validation |
+| 08 | Lists and Grid Views | `experiment_08_lists_grids.dart` | ListView.builder, GridView.builder, and dynamic lists |
+| 09 | REST API Integration | `experiment_09_api_integration.dart` | HTTP requests, JSON parsing, async, await, and FutureBuilder |
+| 10 | Local Data Storage | `experiment_10_local_storage.dart` | SharedPreferences and local storage |
+| 11 | Flutter Animations | `experiment_11_animations.dart` | AnimatedContainer, AnimationController, Tween, and AnimatedBuilder |
+| 12 | Flutter Mini Project | `experiment_12_mini_project.dart` | Student Task Manager, user input, lists, and state management |
 
-1. **Dart SDK and Language Basics** – Introduction to Dart syntax, variables, data types, operators, loops, functions, and object-oriented programming.
-2. **Flutter Widgets and Layouts** – Working with basic Flutter widgets and layout structures.
-3. **Responsive UI Design** – Creating user interfaces that adapt to different screen sizes.
-4. **Navigation and Named Routes** – Implementing screen navigation using routes.
-5. **State Management** – Managing application state using `setState()` and Provider.
-6. **Custom Widgets and Styling** – Creating reusable widgets and customizing UI styles.
-7. **Forms and Validation** – Building forms with input fields and validation.
-8. **Lists and Grid Views** – Displaying collections of data using `ListView` and `GridView`.
-9. **REST API Integration** – Fetching and displaying data from REST APIs.
-10. **Local Data Storage** – Storing and retrieving data locally.
-11. **Animations in Flutter** – Implementing animations to enhance user experience.
-12. **Flutter Mini Project** – Applying the concepts learned to develop a small Flutter application.
-
-## 🛠️ Technologies Used
-
-- **Dart** – Programming language for Flutter development.
-- **Flutter** – UI toolkit for building cross-platform applications.
-- **Android Studio** – IDE for Android and Flutter development.
-- **Visual Studio Code** – Lightweight code editor.
-- **Git and GitHub** – Version control and repository management.
+> **Note:** Verify that the filenames in this table match the actual files in your repository, especially Experiments 2–5.
 
 ## 🎯 Learning Objectives
 
-- Understand Dart programming fundamentals.
+- Understand Dart syntax and programming fundamentals.
 - Build user interfaces using Flutter widgets.
-- Implement navigation and state management.
-- Develop responsive Flutter applications.
-- Create reusable custom widgets.
-- Handle forms and validate user input.
+- Create responsive layouts for different screen sizes.
+- Implement navigation using Navigator and named routes.
+- Manage application state using setState and Provider.
+- Create reusable widgets and apply custom styling.
+- Build forms with input validation.
 - Display data using lists and grid layouts.
-- Integrate REST APIs into Flutter applications.
-- Work with local data storage.
+- Fetch and process data from REST APIs.
+- Store application data locally.
 - Implement animations in Flutter.
-- Apply learned concepts in a mini project.
+- Develop a mini project using Flutter concepts.
 
-## 🚀 Getting Started
+## 🛠️ Technologies Used
 
-### Prerequisites
+- **Dart** — Programming language.
+- **Flutter** — Cross-platform UI framework.
+- **Provider** — State management.
+- **HTTP** — REST API communication.
+- **Shared Preferences** — Local key-value storage.
+- **Git and GitHub** — Version control and source-code hosting.
+- **Visual Studio Code / Android Studio** — Development environments.
 
-Make sure the following tools are installed:
+## 📋 Prerequisites
+
+Install the following tools before running the experiments:
 
 - [Flutter SDK](https://docs.flutter.dev/get-started/install)
 - [Dart SDK](https://dart.dev/get-dart) (included with Flutter)
-- [Android Studio](https://developer.android.com/studio) or [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio)
 - Git
+- An Android emulator or a supported device, if needed
 
-### Installation
+Verify your Flutter installation:
 
-1. Clone the repository:
+```bash
+flutter doctor
+```
 
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-   ```
+## 🚀 Getting Started
 
-2. Navigate to the project directory:
+### 1. Clone the Repository
 
-   ```bash
-   cd YOUR_REPOSITORY
-   ```
+Replace `YOUR_USERNAME` with your GitHub username.
 
-3. Check your Flutter installation:
+```bash
+git clone https://github.com/YOUR_USERNAME/flutter-dart-lab-experiments.git
+cd flutter-dart-lab-experiments
+```
 
-   ```bash
-   flutter doctor
-   ```
+### 2. Set Up a Flutter Project
 
-4. Navigate to the specific Flutter experiment folder containing `pubspec.yaml`.
+If the repository contains individual Dart files rather than a complete Flutter project, create a project locally:
 
-5. Install the project dependencies:
+```bash
+flutter create flutter_lab
+cd flutter_lab
+```
 
-   ```bash
-   flutter pub get
-   ```
+Copy the required experiment file into the project's `lib/` directory.
 
-6. Run the Flutter application:
+### 3. Configure Dependencies
 
-   ```bash
-   flutter run
-   ```
+Add the packages required by your experiment to the `dependencies` section of `pubspec.yaml`.
 
-**Note:** Replace `YOUR_USERNAME` and `YOUR_REPOSITORY` with your actual GitHub username and repository name. The run commands should be executed from the relevant Flutter project directory.
+For example:
 
-## 📂 Repository Structure
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.5.0
+  shared_preferences: ^2.5.3
+  provider: ^6.1.5
+```
 
-The repository may be organized as follows:
+Only include packages needed by your experiments. Check [pub.dev](https://pub.dev/) for compatible package versions.
+
+### 4. Install Dependencies
+
+Run the following command from the directory containing `pubspec.yaml`:
+
+```bash
+flutter pub get
+```
+
+### 5. Run an Experiment
+
+Place the selected experiment's code in `lib/main.dart`, or configure the project to use the appropriate entry point.
+
+Run the application:
+
+```bash
+flutter run
+```
+
+**Important:** Each experiment with its own `main()` function is intended to run separately unless its code is adapted for a shared application.
+
+## 📁 Repository Structure
+
+The intended structure is shown below. Ensure the filenames match your actual repository.
 
 ```text
 flutter-dart-lab-experiments/
-├── dart_basics/
-├── flutter_widgets_layouts/
-├── responsive_ui/
-├── navigation_routes/
-├── state_management/
-├── custom_widgets/
-├── forms_validation/
-├── lists_gridviews/
-├── rest_api_integration/
-├── local_storage/
-├── animations/
-├── flutter_mini_project/
+├── experiment_01_dart_basics.dart
+├── experiment_02_flutter_widgets.dart
+├── experiment_03_responsive_ui.dart
+├── experiment_04_navigation.dart
+├── experiment_05_state_management.dart
+├── experiment_06_custom_widgets.dart
+├── experiment_07_forms.dart
+├── experiment_08_lists_grids.dart
+├── experiment_09_api_integration.dart
+├── experiment_10_local_storage.dart
+├── experiment_11_animations.dart
+├── experiment_12_mini_project.dart
+├── pubspec.yaml
 └── README.md
 ```
 
-*Folder names may vary depending on the actual organization of the experiments.*
+## 📈 Learning Outcomes
 
-## 📖 Learning Outcomes
+By completing these experiments, learners gain practical experience in:
 
-By completing these experiments, learners can gain practical experience in:
-
-- Writing Dart programs and understanding core language concepts.
-- Designing interactive user interfaces with Flutter.
-- Structuring applications with reusable components.
-- Managing application state and navigation.
-- Connecting applications to external APIs.
-- Persisting data locally.
-- Building polished applications with responsive layouts and animations.
+- Dart programming fundamentals.
+- Flutter UI development and responsive design.
+- Reusable widgets and custom layouts.
+- Navigation and state management.
+- Form handling and validation.
+- REST API integration and asynchronous programming.
+- Local data persistence.
+- Animation techniques.
+- Building a mini application using Flutter.
 
 ## 👨‍💻 Author
 
-**Flutter and Dart Practical Learning Repository**
+**Flutter and Dart Lab Experiments**
 
-Created as part of practical learning and experimentation with Flutter application development and the Dart programming language.
+An educational repository created to practise Flutter and Dart through hands-on laboratory experiments.
 
 ## 📄 License
 
-This repository is intended for educational and learning purposes. Add a license file if you wish to specify the terms under which others may use or distribute this project.
+This repository is intended for educational purposes. Add a license file if you wish to specify how others may use, modify, or distribute the code.
